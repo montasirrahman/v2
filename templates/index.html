@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abu Naaim Md. Montasir Rahman</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/logo.png' %}">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div>
+            <a href="./">
+                <img src="{% static 'img/logo.png' %}" alt="" srcset="" class="logo">
+            </a>
+            
+        </div>
+        <div class="header-link">
+            <a class="header-text a1" href="./#about"><b>01.</b>About</a>
+            <a class="header-text a2" href="./#experience"><b>02.</b>Experience</a>
+            <a class="header-text a3" href="./#work"><b>03.</b>Work</a>
+            <a class="header-text a4" href="./#contact"><b>04.</b>Contact</a>
+            <a class="header-resume a5" target="_blank" href="{% static 'file/resume.pdf' %}" >Resume</a>
+        </div>
+        <div class="navicon" onclick="navbar_show()">
+            <div class="n1"></div>
+            <div class="n2"></div>
+            <div class="n3"></div>
+        </div>
+    </header>
+
+    <div class="mobile_nav_bar" id="mobile_nav">
+        <div class="nav_mobile1" onclick="navbar_hide()"></div>
+        <div class="nav_mobile2">
+            <button class="nav_X" onclick="navbar_hide()">X</button>
+            <a class="b1" href="#about" onclick="navbar_hide()"><b>01.&nbsp;&nbsp;</b>About</a>
+            <a class="b2" href="#experience" onclick="navbar_hide()"><b>02.&nbsp;&nbsp;</b>Experience</a>
+            <a class="b3" href="#work" onclick="navbar_hide()"><b>03.&nbsp;&nbsp;</b>Work</a>
+            <a class="b4" href="#contact" onclick="navbar_hide()"><b>04.&nbsp;&nbsp;</b>Contact</a>
+            <a class="b5" target="_blank" href="{% static 'file/resume.pdf' %}"  onclick="navbar_hide()"><b>Resume</b></a>
+        </div>
+    </div>
+    
+    <div  class="left-content">
+            <a target="_blank" href="https://github.com/montasirrahman"><i class="fa fa-github"></i></a>
+            <a target="_blank" href="https://www.instagram.com/montasirrahmanutsho"><i class="fa fa-instagram" ></i></a>
+            <a target="_blank" href="https://twitter.com/MontasirRahman_"><i class="fa fa-twitter" ></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/montasirrahmanutsho/"><i class="fa fa-linkedin" ></i></a>
+            <a target="_blank" href="https://codepen.io/montasirrahman"><i class="fa fa-codepen" ></i></a>
+
+            <p class="line-left"></p>
+    </div>
+
+    <div  class="right-content">
+        <a class="right-content-a" href="mailto:montasirrahmanbd@gmail.com">montasirrahmanbd@gmail.com</a>
+        <p class="line-right"></p>
+    </div>
+
+    <main>
+        <div class="hi-content">
+            <div class="name-content">
+                <h1>Hi, my name is</h1>
+                <h2 class="big-heading">Montasir Rahman.</h2>
+                <h3 class="big-heading-2">I build things for the web.</h3>
+
+                <p>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on my studies at <a href="https://www.bubt.edu.bd/" target="_blank" rel="noreferrer" class="bubt-text">Bangladesh University of Business and Technology</a>.</p>
+                    
+                <div class="contact-me-on">
+                    <a href="archive.html" class="check-out">See My Portfolio!</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!---
+        <div class="px200"></div>
+
+        <div id="about">
+            <div class="px70"></div>
+        </div>
+        
+        <div id="experience">
+            <div class="px70"></div>
+            Experience
+        </div>
+        <div id="work">
+            <div class="px70"></div>
+            work
+        </div>
+        <div id="contact">
+            <div class="px70"></div>
+            contact
+        </div>
+        --------->
+
+        
+    </main>
+
+    
+
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

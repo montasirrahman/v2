@@ -1,0 +1,44 @@
+
+.archive {
+    margin: 0px auto 0 auto;
+    width: 1300px;
+    max-width: 94%;
+}
+.big-archive {
+    margin: 10vh 0 0 0;
+    padding: 0;
+    font-size: 65px;
+    color: var(--lightest-slate);
+    line-height: 1;
+    animation: fadeUpHi .35s  ease-in both;
+    animation-delay: 2s;
+    font-weight: 800;
+}
+.i_work {
+    margin: 15px 0px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+    font-weight: 400;
+    animation: fadeUpHi .35s  ease-in both;
+    animation-delay: 2.5s;
+}
+.portfolio_item {
+    border: 1px solid red;
+    margin: 50px auto 0 auto;
+}
+table {
+    max-width: 90%;
+    width: 1300px;
+    animation: fadeUpHi .35s  ease-in both;
+    animation-delay: 2.7s;
+}
+table th {
+    text-align: left;
+}
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+    .big-archive {
+        margin: 5vh 0 0 0;
+    }
+}
